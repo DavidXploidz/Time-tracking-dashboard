@@ -1,0 +1,217 @@
+:root{
+   
+    --fuenteParrafos: 'Rubik', sans-serif;
+
+      /* ## Colors */
+    --gris: #e1e1e1;
+    --primario: #784D3C;
+    --blanco: #ffffff;
+    --negro: #000000;
+
+    /* ### Primary */
+    --Blue: hsl(246, 80%, 60%);
+    --Lightred : hsl(15, 100%, 70%); /*Work*/
+    --Softblue : hsl(195, 74%, 62%); /*(play)*/
+    --Lightred2 : hsl(348, 100%, 68%); /*(study)*/
+    --Limegreen : hsl(145, 58%, 55%); /*(exercise)*/
+    --Violet : hsl(264, 64%, 52%); /*(social)*/
+    --Softorange : hsl(43, 84%, 65%); /*(self care)*/
+
+    /* ### Neutral */
+    --Verydarkblue: hsl(226, 43%, 10%);
+    --Darkblue: hsl(235, 46%, 20%);
+    --Desaturatedblue: hsl(235, 45%, 61%);
+    --PaleBlue: hsl(236, 100%, 87%);
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.8rem;
+    line-height: 1.5;
+    background-color: var(--Verydarkblue);
+}
+
+/** Globales **/
+a{
+    text-decoration: none;
+}
+p{
+    color: var(--PaleBlue);
+    margin: 0;
+}
+button{
+    all: unset;
+    color: var(--PaleBlue);
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+}
+.contenedor{
+    max-width: 50rem;
+    width: 95%;
+    margin: 0 auto;
+}
+@media (min-width: 1440px) {
+   .contenedor{
+    max-width: 120rem;
+    width: 95%;
+    margin: 15rem auto;
+   }
+}
+.imagen-persona{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 100%;
+    border: 2px solid var(--blanco);
+}
+.image{
+    height: 7rem;
+    width: 8rem;
+}
+.tres-puntos{
+    height: .7rem;
+    width: 2rem;
+}
+.activo{
+    color: var(--blanco);
+}
+
+/*Estilos del card principal */
+.card-principal{
+    background-color: var(--Blue);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+@media (min-width: 1440px) {
+    .card-principal{
+        height: 32rem;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+}
+.card-grid{
+    margin-bottom: 2rem;
+}
+@media (min-width: 1440px) {
+    .card-grid{
+        margin: 0;
+    }
+}
+.name{
+    font-size: 2.8rem;
+    color: var(--blanco);
+}
+@media (min-width: 1440px) {
+   .name{
+        font-size: 3.5rem;
+        font-weight: 300;
+   }
+   .name span{
+    display: block;
+   }
+}
+.grid-desk{
+    display: block
+}
+@media (min-width: 1440px) {
+   .grid-desk{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 3rem;
+   }
+}
+.card-contenido{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    padding-bottom: 2rem;
+}
+@media (min-width: 1440px) {
+   .card-contenido{
+        display: block;
+   }
+}
+.grid-botones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--Darkblue);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    text-align: center;
+}
+@media (min-width: 1440px) {
+   .grid-botones{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        text-align: left;
+   }
+}
+.caja{
+    display: block;
+}
+@media (min-width: 1440px) {
+   .caja{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+   }
+}
+/*Segundo card o work */
+.work{
+    /* background-color: var(--Lightred); */
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10rem;
+}
+.work-text{
+    background-color: var(--Darkblue);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: -16rem;
+    position: absolute;
+    z-index: 10;
+    width: 92%;
+}
+@media (min-width: 1440px) {
+    .work-text{
+        margin-top: -15rem;
+        position: absolute;
+        z-index: 10;
+        width: 14.3%;
+        margin-bottom: 0;
+        transition: .3s;
+        
+    }
+    .work-text:hover{
+        background-color: var(--Desaturatedblue);
+    }
+}
+.work-flex{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    
+}
+.mostrar{
+    display: block;
+}
+.ocultar{
+    display: none;
+}

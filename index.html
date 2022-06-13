@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 14rem; color: azure; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <main class="contenedor grid-desk">
+        <article class="card-grid">
+            <div class="card-principal">
+                <div class="card-contenido">
+                    <img src="images/image-jeremy.png" alt="Imagen de una persona" class="imagen-persona">
+                    <div>
+                        <p>Report for</p>
+                        <p class="name">Jeremy <span>Robson</span></p>
+                    </div>
+                </div>
+            </div><!--fin card-principal-->
+            <div class="grid-botones">
+                <button id="daily" data-id="daily">Daily</button>
+                <button class="activo" id="weekly" data-id="weekly">Weekly</button>
+                <button id="monthly" data-id="monthly">Monthly</button>
+            </div>
+        </article><!--Fin article principal-->
+        <div id="caja" class="caja">
+            
+        </div>
+       
+        
+    </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">David Adame Soto</a>.
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
